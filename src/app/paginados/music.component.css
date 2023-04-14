@@ -1,0 +1,16 @@
+.contenedorBio{
+   background-color: black;
+   overflow: hidden;
+   height: 600px;
+   
+}
+.textbio{
+    width: 60%;
+    background-color: blueviolet;
+    margin: 50px  auto;
+    color: aliceblue;
+    overflow:scroll;
+    height: 600px;
+    padding: 30px;
+}
+.textbio h4{text-align: center;}
