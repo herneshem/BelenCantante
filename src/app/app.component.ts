@@ -8,7 +8,14 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'belen';
+  color = "blue";
 
+  mostrar: boolean = true
+
+  hamburguesa() {
+    this.mostrar = !this.mostrar
+
+  }
 
 
 }

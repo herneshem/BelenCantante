@@ -1,7 +1,7 @@
 <div class="contenedor">
   <div class="menu" >
     <nav class="navbar navbar-expand-lg ">
-      <ul class="ulcss navbar navbar-nav" >
+      <ul class=" ulcss  navbar navbar-nav"  *ngIf="mostrar==false" >
         <li class="nav-item" ><a href="#Inicio">Inicio</a> </li>
         <li class="nav-item"><a href="#Bio">Bio</a> </li>
         <li class="nav-item"><a href="#CantM">Cantante Moderna</a></li>
@@ -11,9 +11,14 @@
         <li class="nav-item"><a href="#Contacto">Contacto</a></li>
       </ul>
     </nav>
-    
-
   </div>
+  <div class="menu-icon" (click)="hamburguesa()" >
+    <span ></span>
+    <span></span>
+    <span></span>
+  </div>
+
+
   <div class="imagen" id="Inicio">
     
    <div class="imginterior">

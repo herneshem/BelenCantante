@@ -24,6 +24,21 @@
 .ulcss li a {
     text-decoration: none;
 }
+.menu-icon {
+    display: none;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    cursor: pointer;
+  }
+.menu-icon span {
+    display: block;
+    width: 35px;
+    height: 5px;
+    margin-bottom: 5px;
+    background-color: #fff;
+    border-radius: 3px;
+  }
 
 .imagen {
     background-image:linear-gradient(rgba(61, 59, 59, 0.5),rgba(97, 95, 95, 0.5)),
@@ -70,3 +85,45 @@
 }
 .formulario .form-group{margin-bottom: 20px;}
 .formulario .btn{margin: auto; }
+
+
+/* RESPONSIVE */
+
+@media (max-width: 480px) {
+/* estilos para dispositivos móviles pequeños */
+.contenedor{display: flex;}
+.imagen{width: 100%;}
+.imginterior{display: grid !important;width: 100%;margin-top: 125px !important;margin: auto;}
+.imginterior :last-child{display: none;}
+.imginterior :first-child{width: 360px  !important;}
+
+.formulario{width: 100%;}
+.menu{font-size: medium; height: auto;}
+.ulcss{
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: max-content;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transform: translateX(-40%);
+    transition: transform 0.3s ease-in-out;
+}
+
+.ulcss.open {
+    transform: translateX(0);
+    display: block;
+  }
+  .menu-icon {
+    display: block;
+  }
+}
+
+@media (max-width: 768px) {
+/* estilos para dispositivos móviles más grandes */
+}
+
+@media (min-width: 1024px) {
+/* estilos para pantallas de escritorio */
+}
