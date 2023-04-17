@@ -16,6 +16,6 @@ export class AppComponent {
     this.mostrar = !this.mostrar
 
   }
-
+ 
 
 }

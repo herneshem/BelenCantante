@@ -66,7 +66,7 @@
     
 }
 
-
+.menudisplay{display: block;}
 
 /*contenedor de formulario*/
 
@@ -99,7 +99,10 @@
 
 .formulario{width: 100%;}
 .menu{font-size: medium; height: auto;}
-.ulcss{
+.ulcss{display: none;}
+.ulcssresp{
+    width: 100%;
+    margin: auto 150px;
     top: 0;
     left: 0;
     z-index: 1;
@@ -107,11 +110,12 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    transform: translateX(-40%);
+    /* transform: translateX(-40%); */
     transition: transform 0.3s ease-in-out;
 }
+.ulcssresp a{text-decoration: none;}
 
-.ulcss.open {
+.ulcssresp.open {
     transform: translateX(0);
     display: block;
   }
