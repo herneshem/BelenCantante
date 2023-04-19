@@ -4,29 +4,33 @@
       <ul class=" ulcss  navbar navbar-nav"  >
         <li class="nav-item" ><a href="#Inicio">Inicio</a> </li>
         <li class="nav-item"><a href="#Bio">Bio</a> </li>
-        <li class="nav-item"><a href="#CantM">Cantante Moderna</a></li>
-        <li class="nav-item"><a href="#CantE">Cantante Espiritual</a></li>
+        <li class="nav-item"><a href="#stylemusic">Cantante Moderna</a></li>
+        <li class="nav-item"><a href="#spirit">Cantante Espiritual</a></li>
         <li class="nav-item"><a href="#Agenda">Agenda</a></li>
         <li class="nav-item"><a href="#Clases">Clases de canto</a></li>
         <li class="nav-item"><a href="#Contacto">Contacto</a></li>
       </ul>
+
+      <!-- MENU RESPONSIVE -->
       <ul class=" ulcssresp  navbar navbar-nav"  *ngIf="mostrar==false" >
         <li class="nav-item" ><a href="#Inicio">Inicio</a> </li>
         <li class="nav-item"><a href="#Bio">Bio</a> </li>
-        <li class="nav-item"><a href="#CantM">Cantante Moderna</a></li>
-        <li class="nav-item"><a href="#CantE">Cantante Espiritual</a></li>
+        <li class="nav-item"><a href="#stylemusic">Cantante Moderna</a></li>
+        <li class="nav-item"><a href="#spirit">Cantante Espiritual</a></li>
         <li class="nav-item"><a href="#Agenda">Agenda</a></li>
         <li class="nav-item"><a href="#Clases">Clases de canto</a></li>
         <li class="nav-item"><a href="#Contacto">Contacto</a></li>
       </ul>
+      <!-- FIN MENU RESPONSIVE -->
     </nav>
   </div>
+  <!-- menu hamburguesa responsive -->
   <div class="menu-icon" (click)="hamburguesa()" >
     <span ></span>
     <span></span>
     <span></span>
   </div>
-
+  <!-- in menu hamburguesa responsive -->
 
   <div class="imagen" id="Inicio">
     
@@ -47,6 +51,16 @@
   <app-music></app-music>
 </div>
 
+<div class="contenedortres" id="stylemusic">
+  <app-stylemusic> </app-stylemusic>
+</div>
+
+<div class="contenedortres" id="spirit">
+  <app-spiritmusic> </app-spiritmusic>
+</div>
+
 <div class="contenedortres" id="Contacto">
   <app-formulario> </app-formulario>
 </div>
+
+
