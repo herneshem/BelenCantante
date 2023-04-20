@@ -1,23 +1,32 @@
 <div class="row stylecontainer">
     <div class="col-sm-6">
-      <div class="card">
+      <div class="card cardstyle">
         <div class="card-body">
           <h5 class="card-title">Cantante Moderna</h5>
-          <p class="card-text">Latina</p>
-          <p class="card-text">Jazz</p>
-          <p class="card-text">Tualuta</p>
-
+          <a href="#stylemusic" (click)="latina()" ><p class="card-text">Latina</p></a>
+          <a href="#stylemusic" (click)="jazz()"><p class="card-text">Jazz</p></a>
+          <a href="#stylemusic" (click)="tualuta()"><p class="card-text">Tualuta</p></a>
           <a href="#" class="btn btn-primary">Change</a>
         </div>
       </div>
     </div>
     <div class="col-sm-6">
       <div class="card">
-        <div class="card-body">
-          <h5 class="card-title">Directiva de title</h5>
-          <p class="card-text">Título tema.</p>
-          <div>imagen radio</div>
-          <a href="#" class="btn btn-primary">Play</a>
+        <div class="videosyoutube ">
+          <h5 class="card-title">{{titlestyle}}</h5>
+          <div class="container mt-2">
+            <div class="row">
+                <div class="col " *ngIf="showDivOne">
+                  <youtube-player class="videoplayer " videoId="LjucJS6Nb6E"></youtube-player>'
+                </div>
+                <div class="col  " *ngIf="showDivTwo">
+                  <youtube-player class="videoplayer " videoId="IX3UoCYOODE"></youtube-player>'
+                </div>
+                <div class="col  " *ngIf="showDivThree">
+                  <youtube-player class="videoplayer " videoId="3tEYFkFaYQE"></youtube-player>'
+                </div>
+            </div>
+        </div>  
         </div>
       </div>
     </div>

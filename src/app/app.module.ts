@@ -7,17 +7,22 @@ import { FormularioComponent } from './paginados/formulario.component';
 import { stylemusicComponent } from './paginados/stylemusic.component';
 import { SpiritmusicComponent } from './paginados/spiritmusic.component';
 
+import {YouTubePlayerModule} from '@angular/youtube-player';
+
+
 @NgModule({
   declarations: [
     AppComponent,
     MusicComponent,
     FormularioComponent,
     stylemusicComponent,
-    SpiritmusicComponent
+    SpiritmusicComponent,
+
 
   ],
   imports: [
     BrowserModule,
+    YouTubePlayerModule
     
   ],
   providers: [],
