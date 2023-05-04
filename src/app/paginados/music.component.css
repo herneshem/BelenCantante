@@ -15,3 +15,8 @@
 }
 .textbio h4{text-align: center;}
 .acepto{padding: 5px;}
+
+
+@media (max-width: 768px) {
+    .textbio{width: 90%;}
+}

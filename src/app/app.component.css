@@ -159,10 +159,12 @@
 @media (max-width: 768px) {
 /* estilos para dispositivos móviles más grandes */
 .stylecontainer{width: 100%;}
+.imagen .imginterior img:last-child{display: none;}
 .videoplayer {
     width: 100% !important;
     display: flex;
     }
+.formulario{width: 80%;}
 }
 
 @media (min-width: 1024px) {
