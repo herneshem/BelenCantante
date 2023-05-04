@@ -31,7 +31,9 @@
     <span></span>
   </div>
   <!-- in menu hamburguesa responsive -->
-
+  <!-- <div class="contenedorcuatro" >
+    <app-privacidad></app-privacidad>
+  </div> -->
   <div class="imagen" id="Inicio">
     
    <div class="imginterior">
@@ -39,28 +41,29 @@
     <img src="./assets/PortadaEspiritual.jpg" alt=""> 
 
    </div>
-
-
-
   </div>
 
 </div>
 
+<div class="secciones" >
 
-<div class="contenedordos" id="Bio">
-  <app-music></app-music>
+  <div class="contenedordos" id="Bio">
+    <app-music></app-music>
+  </div>
+  
+  <div class="contenedortres" id="stylemusic">
+    <app-stylemusic> </app-stylemusic>
+  </div>
+  
+  <div class="contenedortres" id="spirit">
+    <app-spiritmusic> </app-spiritmusic>
+  </div>
+  
+  <div class="contenedortres" id="Contacto">
+    <app-formulario></app-formulario>
+  </div>
+    
+  
 </div>
 
-<div class="contenedortres" id="stylemusic">
-  <app-stylemusic> </app-stylemusic>
-</div>
-
-<div class="contenedortres" id="spirit">
-  <app-spiritmusic> </app-spiritmusic>
-</div>
-
-<div class="contenedortres" id="Contacto">
-  <app-formulario> </app-formulario>
-</div>
-
-
+<router-outlet></router-outlet>

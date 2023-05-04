@@ -19,7 +19,7 @@ export class stylemusicComponent implements OnInit{
     showDivOne: boolean = true;
     showDivTwo: boolean = false;
     showDivThree: boolean = false;
-    titlestyle=""
+    titlestyle="Latina"
     latina(){
         this.showDivOne = true;
         this.showDivTwo = false;

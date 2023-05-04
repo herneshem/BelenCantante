@@ -1,7 +1,7 @@
 .contenedorBio{
    background-color: black;
    overflow: hidden;
-   height: 600px;
+   height: auto;
    
 }
 .textbio{
@@ -14,3 +14,4 @@
     padding: 30px;
 }
 .textbio h4{text-align: center;}
+.acepto{padding: 5px;}
